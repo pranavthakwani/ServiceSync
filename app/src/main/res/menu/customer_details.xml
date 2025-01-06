@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/callCustomerBTN"
+        android:icon="@drawable/call"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+    <item app:showAsAction="ifRoom"
+        android:icon="@drawable/dots"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/editcustomer"
+                android:title="Edit Customer"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/deletecustomer"
+                android:title="Delete Customer"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/services"
+                android:title="Services"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>
